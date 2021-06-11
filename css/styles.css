@@ -1,0 +1,95 @@
+/*
+font-family: 'Rubik', sans-serif;
+https://coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429
+2b2d42  gris muy oscuro
+8d99ae  gris
+edf2f4  gris claro      primario
+ef233c  colorado
+d90429  colorado intenso 
+*/
+
+:root{
+    --primario: #edf2f4;
+    --primario-oscuro: #8d99ae;
+    --casi-negro:#2b2d42;
+    --rojo:#ef233c;
+    --rojo-intenso:#d90429;
+
+    --fuentePpal:'Rubik',sans-serif;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /**GLOBALES**/
+
+body{
+      background-color: var(--primario);
+      font-size: 1.6rem;
+      line-height: 1.5;
+  }
+
+p{
+      font-size: 1.8rem;
+      font-family: var(--fuentePpal);
+      color: var(--casi-negro);
+  }
+
+a{      text-decoration: none;  }
+img{      max-width: 100%;  }
+
+.contenedor{
+      max-width: 120rem;
+      margin: 0 auto;
+  }
+
+h1, h2, h3{
+      text-align: center;
+      color: var(--rojo);
+      font-family: var(--fuentePpal);
+  }
+
+h1{      font-size: 4rem;  }
+h2{      font-size: 3.2rem;  }
+h3{      font-size: 2.4rem;  }
+
+  /*HEADER*/
+.header{
+      display: flex;
+      justify-content: center;
+  }
+
+.header__logo{
+      margin: 3rem  0;
+      width: 16rem;             /**/
+  }
+
+  /*NAVEGACION*/
+
+.navegacion{
+      background-color: var(--casi-negro);
+      padding: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+  }
+
+.navegacion__enlace{
+      font-family: var(--fuentePpal);
+      color: var(--primario);
+      font-size: 3rem;
+      text-transform: uppercase;
+      cursor: pointer;
+  }
+
+
+.navegacion__enlace:hover{
+      color: var(--rojo);
+
+  }

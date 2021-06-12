@@ -30,7 +30,7 @@ html {
   /**GLOBALES**/
 
 body{
-      background-color: var(--primario);
+      background-color: var(--primario-oscuro);
       font-size: 1.6rem;
       line-height: 1.5;
   }
@@ -71,13 +71,13 @@ h3{      font-size: 2.4rem;  }
   }
 
   /*FOOTER*/
-  .footer{
+.footer{
     background-color: var(--rojo-intenso);
     padding: 1rem 0;
     margin-top: 2rem;
   }
 
-  .footer__texto{
+.footer__texto{
     font-family: var(--fuentePpal);
     text-align: center;
     color: var(--primario);
@@ -100,7 +100,7 @@ h3{      font-size: 2.4rem;  }
       cursor: pointer;
   }
 
-  .navegacion__enlace:hover{
+.navegacion__enlace:hover{
       color: var(--rojo);
   }
 /*GRID*/
@@ -122,33 +122,33 @@ h3{      font-size: 2.4rem;  }
 
 /*PRODUCTOS*/
 
-  .producto{
+.producto{
     background-color: var(--rojo-intenso);
     padding: 1rem;
 
   }
 
-  .producto__imagen{
+.producto__imagen{
     width: 100%;
    
   }
 
-  .producto__informacion{
+.producto__informacion{
 
   }
 
-  .producto__nombre{
+.producto__nombre{
     font-size: 4rem;
 
   }
 
-  .producto__precio{
+.producto__precio{
     font-size: 2.8rem;
     color: var(--primario);
   }
 
-  .producto__nombre,
-  .producto__precio{
+.producto__nombre,
+.producto__precio{
     font-family: var(--fuentePpal);
     margin: 1rem 0;
     text-align: center;
@@ -233,4 +233,61 @@ h3{      font-size: 2.4rem;  }
 
 .bloque__titulo{
   margin: 0;
+}
+
+/*PAG DEL PRODUCTO*/
+
+@media(min-width:768px){
+  .remera{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+
+.remera__contenido{
+
+}
+
+.remera__imagen{
+  width: 100%;
+
+}
+
+.formulario{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+}
+
+.formulario__campo{
+  border: 0.5rem solid var(--casi-negro);
+  background-color: var(--primario-oscuro);
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--primario);
+  font-family: var(--fuentePpal);
+  appearance: none;
+}
+
+.formulario__submit{
+  background-color: var(--rojo-intenso);
+  color: var(--primario-oscuro);
+  text-transform: uppercase;
+  padding: 2rem;
+  border: none;
+  font-size: 2rem;
+  font-family: var(--fuentePpal);
+  transition: 0.3s ease;
+  grid-column: 1/3;
+
+}
+
+.formulario__submit:hover{
+  cursor: pointer;
+  background-color: var(--rojo);
+  color: var(--primario);
+  font-size: 2.5rem;
 }

@@ -124,11 +124,13 @@ h3{      font-size: 2.4rem;  }
 
   .producto{
     background-color: var(--rojo-intenso);
+    padding: 1rem;
 
   }
 
   .producto__imagen{
-
+    width: 100%;
+   
   }
 
   .producto__informacion{
@@ -136,9 +138,99 @@ h3{      font-size: 2.4rem;  }
   }
 
   .producto__nombre{
+    font-size: 4rem;
 
   }
 
   .producto__precio{
-
+    font-size: 2.8rem;
+    color: var(--primario);
   }
+
+  .producto__nombre,
+  .producto__precio{
+    font-family: var(--fuentePpal);
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 3.5rem;
+  }
+
+/*GRAFICO*/
+
+.grafico{
+  min-height: 30rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grafico--remeras{
+  grid-row: 2/3;
+  grid-column: 1/3;
+  background-image: url(/img/detalle20.png);
+}
+
+.grafico--ropa{
+  background-image: url(/img/detalle22.png);
+  grid-column: 1/3;
+  grid-row: 8/9;
+}
+
+
+@media (min-width:768px){
+  .grafico--ropa{
+    grid-row: 5/6;
+    grid-column:2/-2;
+  }  
+}
+
+
+/*NOSOTROS*/
+
+.nosotros{
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  text-align: justify;
+  padding: 2rem;
+
+}
+
+@media (min-width:768px){
+  .nosotros{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    text-align: justify;
+    padding: 2rem;
+}
+
+}
+.nosotros__imagen{
+  grid-row: 1/2;
+  width: 100%;
+}
+
+@media (min-width:768px){
+  .nosotros__imagen{
+    grid-column: 2/3;
+  }
+}
+
+/*BLOQUES*/
+
+.bloques{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media(min-width:768px){
+  .bloques{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.bloque{
+  text-align: center;
+}
+
+.bloque__titulo{
+  margin: 0;
+}
